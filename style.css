@@ -1,0 +1,199 @@
+/* Landing Page Background Image, Responsive Landing Page Background Image */     
+/* Reference Tutorial https://www.webfx.com/blog/web-design/responsive-background-image/ */
+.home-intro {
+    background-image: url(images/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */  /* This is what was messing up, this will keep the image not moving when scroll*/
+    background-size: cover;
+    height: 100vh;  /* essential for keeping the image to only one page */
+    /* background-color: red; */
+}
+
+/* Reference Post https://stackoverflow.com/questions/44256851/responsive-font-size-using-css-bootstrap */
+@media only screen and (max-width: 300px) {
+    .intro {
+        font-size: 1.0rem; 
+    }
+    #profilepic {
+        width: 50%;
+    }
+}
+
+/* Small devices (Phones, 600pxand down) -- this would display the text at 5.0rem on phones */
+@media only screen and (max-width: 600px) {
+    .intro {
+        font-size: 2.0rem; 
+    }
+    #profilepic {
+        width: 50%;
+    }
+    #navbaritems {
+        font-size: 1rem;
+    }
+    
+    #navbarname {
+        font-size: 1.3rem;
+    }
+    #resumebutton {
+        width: 5em;
+        height: 5em;
+    }
+    #linkedinlogo {
+        width: 80%;
+    }
+    #githublogo {
+        width: 80%;
+    }
+    #gmaillogo {
+        width: 80%;
+    }
+}
+
+/* Can actually use min and max width togather */
+/* Medium devices */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .intro {
+        font-size: 3.5rem; 
+    }
+    #profilepic {
+        width: 50%;
+    }
+    #selfdescription {
+        font-size: 2rem;
+    }
+    #navbaritems {
+        font-size: 1.2rem;
+    }
+    
+    #navbarname {
+        font-size: 1.8rem;
+    }
+    #resumebutton {
+        width: 11rem;
+        height: 11rem;
+        font-size: 2.2em;
+    }
+    #linkedinlogo {
+        width: 60%;
+    }
+    #githublogo {
+        width: 60%;
+    }
+    #gmaillogo {
+        width: 60%;
+    }
+}
+
+    
+    
+/* Large devices (laptops/desktops, 992px and up) -- This would display the text at 10.0rem on laptops and larger screens */    
+@media only screen and (min-width: 992px) {
+    .intro {
+        font-size: 6.0rem; 
+    }
+    #profilepic {
+        width: 25%;
+    }
+    #selfdescription {
+        font-size: 2rem;
+    }
+    #navbaritems {
+        font-size: 1.2rem;
+    }
+    
+    #navbarname {
+        font-size: 1.8rem;
+    }
+    #resumebutton {
+        width: 11rem;
+        height: 11rem;
+        font-size: 2.2em;
+    }
+    #linkedinlogo {
+        width: 60%;
+    }
+    #githublogo {
+        width: 60%;
+    }
+    #gmaillogo {
+        width: 60%;
+    }
+}
+
+
+.nav-scrolled {
+    background-color: black;
+}
+
+#landingpagebutton {
+    color: white;
+    border-color: white;
+    font-weight: bold;
+}
+
+#landingpagebutton:hover {
+    background-color: #59595fbd;
+    /* #375673; earth blue */
+    /* rgb(21, 35, 119) ; */
+}
+
+#navbaritems {
+    color: white;
+    /* font-size: 1.2rem; */
+    font-family: Trebuchet MS, sans-serif;
+}
+
+#navbaritems:hover {
+    color: #fa9006;
+}
+
+#navbarname {
+    color: white;
+    /* font-size: 1.8rem; */
+    font-family: Trebuchet MS, sans-serif;
+}
+
+#navbarname:hover {
+    color: #fa9006;
+}
+
+#projectbutton {
+  color: white;
+  border-color: white;
+  font-weight: bold;
+}
+
+#projectbutton:hover {
+    background-color: white;
+    color: black;
+}
+
+#resumebutton {
+    font-weight: bold;
+}
+
+#linkedinlogo {
+    transition: all .2s ease-in-out;
+}
+
+#linkedinlogo:hover {
+    /* background-color:#0072b1; */
+    transform: scale(1.5);
+}
+
+#githublogo {
+    transition: all .2s ease-in-out;
+}
+
+#githublogo:hover {
+    transform: scale(1.5);
+}
+
+#gmaillogo {
+    transition: all .2s ease-in-out;
+}
+
+#gmaillogo:hover {
+    transform: scale(1.5);
+}
